@@ -1,10 +1,13 @@
 $(document).ready(function(){
         $("#main").animate({top:'100px'},1700,'easeInOutQuint');
-        $('.btn-danger').click(function() {
+        $('#resumebutton').click(function() {
           $('#alertdos').toggleClass("alert-success");
           $('#alertdos').toggleClass("alert-danger");
         });
-        $('.btn-default').click(function() {
+        $('#nothingbutton').click(function() {
           alert('Told you so.');
-        })
+        });
+        $('#iobutton').click(function() {
+          $('#ioalert').toggle();
+        });
 });

@@ -10,3 +10,6 @@
 .debug {
   background-color: green;
 }
+#ioalert {
+  display: none;
+}
