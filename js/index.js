@@ -8,6 +8,6 @@ $(document).ready(function(){
           alert('Told you so.');
         });
         $('#iobutton').click(function() {
-          $('#ioalert').toggle();
+          $('#ioalert').slideToggle(2000,'easeInOutBounce');
         });
 });
