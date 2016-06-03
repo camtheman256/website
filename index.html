@@ -11,17 +11,17 @@
   </head>
   <body>
     <div class="container" style="top:-120%" id="main">
-      <div class="jumbotron">
+      <div class="jumbotron" itemscope itemtype="http://schema.org/Person">
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-            <img src="img/profile.jpg" id="profileimg" class="img-responsive img-circle" />
+            <img itemprop="image" src="img/profile.jpg" id="profileimg" class="img-responsive img-circle" />
           </div>
           <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12">
-            <h1>Cameron Kleiman</h1>
+            <h1 itemprop="name">Cameron Kleiman</h1>
           </div>
         </div>
         <h2><small>Site in progress. We'll see how it goes</small></h2>
-        <p>I'm a freshman at <a href="http://www.lasahighschool.org/" target="_blank">the Liberal Arts and Science Academy</a> in Austin, Texas.</p>
+        <p itemprop="description">I'm a freshman at <a href="http://www.lasahighschool.org/" target="_blank">the Liberal Arts and Science Academy</a> in Austin, Texas.</p>
         <p>I'm currently taking <a href="http://www.austinstudentfilm.com" target="_blank">Audio Video Production</a> and my movie is <a href="https://vimeo.com/164790023" target="_blank">here.</a> I plan to take <a href="http://lasacs.com/" target="_blank">AP Computer Science</a> next year, and I really need to learn how to code! </p>
         <div class="btn-toolbar" role="toolbar">
           <a class="btn btn-primary" href="https://www.instagram.com/cameronlasastudent/" role="button" target="_blank">
@@ -49,6 +49,8 @@
             Another alert! You weren't expecting that!
           </div>
         </div>
+        <h3>Okay, enough with the fun. Let's check out my blog!</h3>
+        <a href="/blog" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-globe"></span> Enter the blog! (not functioning yet)</a>
       </div>
     </div>
   </body>
