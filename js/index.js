@@ -7,7 +7,4 @@ $(document).ready(function(){
         $('#nothingbutton').click(function() {
           alert('Told you so.');
         });
-        $('#iobutton').click(function() {
-          $('#ioalert').slideToggle(2000,'easeOutBounce');
-        });
 });
