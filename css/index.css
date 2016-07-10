@@ -13,3 +13,12 @@
 #ioalert {
   display: none;
 }
+.indent {
+    text-shadow: 0px -2px 0px #fff;
+}
+.linklessh:hover {
+    text-decoration:underline;
+}
+.linklessa:active {
+    text-decoration:underline;
+}
