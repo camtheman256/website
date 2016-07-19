@@ -22,3 +22,6 @@
 .linklessa:active {
     text-decoration:underline;
 }
+.extra-space {
+    margin-bottom: 20px;
+}
