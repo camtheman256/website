@@ -3,7 +3,7 @@
   <head>
     <title>Cameron Kleiman</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container" style="top:-120%" id="main">
-      <div class="jumbotron" itemscope itemtype="http://schema.org/Person">
+      <div class="jumbotron" id="big-frame" itemscope itemtype="http://schema.org/Person">
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
             <img itemprop="image" src="img/profile.jpg" id="profileimg" class="img-responsive img-circle" />
@@ -68,7 +68,10 @@
         
         <h3>Okay, enough with the fun. Let's check out my blog
           <small><i>Surprisingly</i>, it actually works.</small></h3>
-        <a href="http://problems.cameronk.rocks" class="btn btn-primary btn-lg"><i class="fa fa-newspaper-o"></i>&nbsp;Nerd Problems, a blog by Cameron Kleiman</a>
+        <div class="btn-group">
+             <a href="http://problems.cameronk.rocks" class="btn btn-primary btn-lg"><i class="fa fa-newspaper-o"></i>&nbsp;Nerd Problems</a>
+          <button type="button" class="btn btn-default btn-lg" id="bloginfo"><i class="fa fa-info-circle"></i></button>
+            </div>
           </div>
       </div>
     </div>
