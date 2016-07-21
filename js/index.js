@@ -16,7 +16,7 @@ $(document).ready(function(){
             animation: true,
             content: "A blog by Cameron Kleiman about various problems encountered by nerds on an impressively frequent basis, but also other things",
             title: "About Nerd Problems",
-            trigger: "hover",
+            trigger: "focus hover",
             placement: "auto",
             container: "body"
         });
