@@ -20,4 +20,11 @@ $(document).ready(function(){
             placement: "auto",
             container: "body"
         });
+        $("#profileimg").tooltip({
+          title: "New profile picture coming soon. Or when I update this next.",
+          trigger: "focus hover",
+          placement: "auto right",
+          container: "body"
+        });
+        $('[data-toggle="tooltip"]').tooltip()
 });
