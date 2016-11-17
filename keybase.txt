@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/ckleiman15
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cameronk.rocks
+  * I am ckleiman15 (https://keybase.io/ckleiman15) on keybase.
+  * I have a public key ASDWowvTsLp2foUesuLrHveq3R48sHjTAZCOnzy7nCMDgQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d6a30bd3b0ba767e851eb2e2eb1ef7aadd1e3cb078d301908e9f3cbb9c2303810a",
+            "host": "keybase.io",
+            "kid": "0120d6a30bd3b0ba767e851eb2e2eb1ef7aadd1e3cb078d301908e9f3cbb9c2303810a",
+            "uid": "1b2c85f66d0d0be530e07336232cd319",
+            "username": "ckleiman15"
+        },
+        "service": {
+            "hostname": "cameronk.rocks",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1479399313,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1479399301,
+        "hash": "cad3fb520084fce292eddf4feacc500aaa5188f72961590b00f12dd367d0308f79052da3864f495b1aacde33f53b9a3d71cb7351ad5a0e644361e26eda8508a0",
+        "seqno": 719272
+    },
+    "prev": "6276348e521cd7a4030d9c88471268e79a5f1cc6cd1e03625e2f9d796564f3a3",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1qML07C6dn6FHrLi6x73qt0ePLB40wGQjp88u5wjA4EKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDZhMzBiZDNiMGJhNzY3ZTg1MWViMmUyZWIxZWY3YWFkZDFlM2NiMDc4ZDMwMTkwOGU5ZjNjYmI5YzIzMDM4MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDZhMzBiZDNiMGJhNzY3ZTg1MWViMmUyZWIxZWY3YWFkZDFlM2NiMDc4ZDMwMTkwOGU5ZjNjYmI5YzIzMDM4MTBhIiwidWlkIjoiMWIyYzg1ZjY2ZDBkMGJlNTMwZTA3MzM2MjMyY2QzMTkiLCJ1c2VybmFtZSI6ImNrbGVpbWFuMTUifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImNhbWVyb25rLnJvY2tzIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ3OTM5OTMxMywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc5Mzk5MzAxLCJoYXNoIjoiY2FkM2ZiNTIwMDg0ZmNlMjkyZWRkZjRmZWFjYzUwMGFhYTUxODhmNzI5NjE1OTBiMDBmMTJkZDM2N2QwMzA4Zjc5MDUyZGEzODY0ZjQ5NWIxYWFjZGUzM2Y1M2I5YTNkNzFjYjczNTFhZDVhMGU2NDQzNjFlMjZlZGE4NTA4YTAiLCJzZXFubyI6NzE5MjcyfSwicHJldiI6IjYyNzYzNDhlNTIxY2Q3YTQwMzBkOWM4ODQ3MTI2OGU3OWE1ZjFjYzZjZDFlMDM2MjVlMmY5ZDc5NjU2NGYzYTMiLCJzZXFubyI6MTEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAY8dUqyfF3mROUz11Llgav5ENqtc+7WdB5yAqgqC9+JmKr8dZ+aKvRZ0/TohKJUgMEsuOe4Jg6R5tkuvV5PYpCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIruv0YNsxc4rRuGWhPaEb1NcBpOHV742GwRUciv20Ofo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ckleiman15
+
+==================================================================
