@@ -10,8 +10,8 @@ $(document).ready(function(){
         $('#panel-expand').click(function () {
             $('#arrowicon').toggleClass("fa-arrow-circle-up");
             $('#arrowicon').toggleClass("fa-arrow-circle-down");
-            $('.panel-body').slideToggle({duration: 750, easing: 'easeOutExpo'});
-        })
+            $('#card-display').slideToggle({duration: 750, easing: 'easeOutExpo'});
+        });
         $("#bloginfo").popover({
             animation: true,
             content: "A blog by Cameron Kleiman about various problems encountered by nerds on an impressively frequent basis, but also other things",
@@ -23,8 +23,8 @@ $(document).ready(function(){
         $("#profileimg").tooltip({
           title: "New profile picture coming soon. Or when I update this next.",
           trigger: "focus hover",
-          placement: "auto right",
+          placement: "auto",
           container: "body"
         });
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
 });

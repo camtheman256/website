@@ -22,6 +22,15 @@
 .linklessa:active {
     text-decoration:underline;
 }
+.no-cursor {
+    cursor: default;
+}
 .extra-space {
     margin-bottom: 20px;
+}
+#sn-cont {
+    right:0; margin-top: 5px; margin-right: 5px; position:fixed; background-color:white; border-radius:4px; z-index:2
+}
+.btn + .btn {
+    margin-left: .3rem;
 }
