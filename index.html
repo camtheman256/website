@@ -6,8 +6,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/567ad732ad.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <script type="text/javascript" src="/js/index.js"></script>
@@ -19,21 +19,31 @@
 #signin:hover {
     background-color: hsl(208, 60%, 90%);
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #name {
+    font-size: 4.0rem;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  #name {
+    font-size: 4.0rem;
+  }
+}
 </style>
 <ul class="nav nav-pills" id="sn-cont" style="">
     <li role="presentation" style=""><a id="signin" class="nav-link" style="" href="http://mail.cameronk.rocks"><i class="fa fa-lock"></i>&ensp;Sign in</a></li>
 </ul>
 <div class="container" style="top:-120%" id="main">
     <div class="jumbotron" id="big-frame" itemscope itemtype="http://schema.org/Person">
-        <div class="flex-row mb-3">
-            <div class="col-md-2 col-xs-4">
-                <img itemprop="image" src="img/profile.jpg" id="profileimg" class="img-fluid rounded-circle" />
+        <div class="d-flex flex-row mb-3 align-items-center flex-wrap">
+            <div class="col-xl-3 col-md-4 col-sm-5 col-6 mx-auto">
+                <img itemprop="image" src="img/IMG_6600.JPG" id="profileimg" class="img-fluid rounded-circle"/>
             </div>
-            <div class="col-md-10 col-sm-8 col-xs-12">
-                <h1 itemprop="name" class="align-middle ">Cameron Kleiman</h1>
+            <div class="col-xl-9 col-md-8 col-sm-7 col-12 text-center">
+                <h1 itemprop="name" id="name" class="display-3">Cameron Kleiman</h1>
             </div>
         </div>
-        <h2 class="indent"><small>Site <i>actually</i> in progress. It's going pretty great.</small></h2>
+        <h2 class="indent"><small>In progress, as usual.</small></h2>
         <p itemprop="description">I'm a junior at <a href="http://www.lasahighschool.org/" target="_blank">the Liberal Arts and Science Academy</a> in Austin, Texas.
         </p>
         <p>This site was originally created for <a href="http://www.austinstudentfilm.com" target="_blank">Audio Video Production</a> to upload my <a href="#resumebutton">film resume</a>. I took the <a href="http://lasacs.com/" target="_blank">AP Computer Science</a> course and learnt Java, and it was super lit. In the process, I did some <a href="https://projecteuler.net/progress=cmk256">Project Euler</a>.</p>
@@ -79,13 +89,7 @@
                 <i class="fa fa-twitter"></i>&nbsp;Twitter
             </a>
         </div>
-        <h3 class="mb-3">Okay, enough with the fun. Let's check out my blog
-            <small><i>Surprisingly</i>, it actually works.</small></h3>
-            <div class="btn-group">
-                <a href="http://problems.cameronk.rocks" class="btn btn-primary btn-lg"><i class="fa fa-newspaper-o"></i>&nbsp;Nerd Problems</a>
-                <a tabindex="0" role="button" class="btn btn-secondary btn-lg" id="bloginfo"><i class="fa fa-info-circle"></i></a>
-            </div>
-        </div>
-    </div>
+	</div>
+</div>
 </body>
 </html>

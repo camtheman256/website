@@ -12,16 +12,8 @@ $(document).ready(function(){
             $('#arrowicon').toggleClass("fa-arrow-circle-down");
             $('#card-display').slideToggle({duration: 750, easing: 'easeOutExpo'});
         });
-        $("#bloginfo").popover({
-            animation: true,
-            content: "A blog by Cameron Kleiman about various problems encountered by nerds on an impressively frequent basis, but also other things",
-            title: "About Nerd Problems",
-            trigger: "focus hover",
-            placement: "auto",
-            container: "body"
-        });
         $("#profileimg").tooltip({
-          title: "New profile picture coming soon. Or when I update this next.",
+          title: "Picture, updated! 🎉",
           trigger: "focus hover",
           placement: "auto",
           container: "body"
