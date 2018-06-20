@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#main").animate({ top: '100px' }, 1700, 'easeInOutQuint');
+    $("#main").animate({ top: '50px' }, 1700, 'easeInOutQuint');
         $('#resumebutton').click(function() {
           $('#alertdos').toggleClass("alert-success");
           $('#alertdos').toggleClass("alert-danger");
@@ -7,9 +7,16 @@ $(document).ready(function(){
         $('#nothingbutton').click(function() {
           alert('Told you so.');
         });
+        var start = 0
         $('#panel-expand').click(function () {
-            $('#arrowicon').toggleClass("fa-arrow-circle-up");
-            $('#arrowicon').toggleClass("fa-arrow-circle-down");
+            $({deg: start}).animate({deg: start+180}, {
+              duration: 750,
+              step: function(now) {
+                $("#arrowicon").css("transform", `rotate(${now}deg)`);
+              },
+              easing: 'easeOutExpo'
+            });
+            start += 180;
             $('#card-display').slideToggle({duration: 750, easing: 'easeOutExpo'});
         });
         $("#profileimg").tooltip({
