@@ -50,7 +50,7 @@
         <p>
           I'm also a senior officer of LASA Ambassadors, captain of <a href="https://www.lbjxc.org" target="_blank">LBJ Cross Country</a>, and an Assistant Technical Director for the <a href="http://alleycatplayers.org" target="_blank">Alley Cat Players</a>. I also work for <a href="https://www.cetecerp.com/" data-toggle="tooltip" title="Run your business efficiently!">Cetec ERP</a> in my spare time.
         </p>
-        <div class="card card-primary mb-3">
+        <div class="card mb-3" id="card-deck-updates">
             <h4 class="card-header no-cursor" id="panel-expand"><i class="fa fa-bell"></i>&nbsp;<span class="linklessa">Updates</span>&emsp;<i class="fa fa-arrow-circle-down" id="arrowicon"></i></h4>
             <div class="card-body" id="card-display" style="display:none">
                 <div class="card-deck">
@@ -63,10 +63,27 @@
                             </p>
                         </div>
                     </div>
+                    <div class="card updates">
+                      <div class="card-body">
+                        <h4 class="card-title"><i class="fab fa-fort-awesome"></i>&ensp;<span id="special_card_title">Fun features</h4>
+                        <p class="card-text">
+                          <span id="lame_card_text">Figure out how to enable this card for a fun surprise. <b>Hint:</b> It requires a keyboard. Good luck! <a href="#" class="d-lg-none" onclick="enable_dark_theme()">(Mobile users, click here to cheat.)</a></span>
+                          <h5 class="special_card_stuff" style="display:none">Toggle dark mode on <a href="https://camk.co">camk.co</a>:</h5>
+                          <div class="btn-group btn-group-toggle special_card_stuff" id="dark_mode" data-toggle="buttons" style="display:none">
+                            <label class="btn btn-light active">
+                              <input type="radio" name="dark_mode" autocomplete="off" value="off" checked> Off
+                            </label>
+                            <label class="btn btn-dark">
+                              <input type="radio" name="dark_mode" autocomplete="off" value="on"> On
+                            </label>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="btn-toolbar mb-3" role="toolbar">
+        <div class="btn-toolbar mb-3" role="toolbar" id="btn-toolbar">
             <a class="btn btn-primary" role="button" href="files/resume.pdf" target="_blank" id="resumebutton">
                 <i class="fa fa-file-alt"></i>&nbsp;Film Resume
             </a>
