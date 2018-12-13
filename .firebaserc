@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "homepage-f9fbf"
+  },
+  "targets": {
+    "homepage-f9fbf": {
+      "hosting": {
+        "me": [
+          "homepage-f9fbf"
+        ],
+        "mcstatus": [
+          "mcserverstatus"
+        ]
+      }
+    }
   }
 }

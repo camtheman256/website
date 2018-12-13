@@ -1,12 +1,17 @@
 {
-  "hosting": {
-    "public": ".",
-    "ignore": [
-      "firebase.json",
-      ".git/**",
-      ".firebaserc",
-      ".gitignore"
-    ],
+  "hosting": [{
+    "target": "me",
+    "public": "me",  
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  {
+    "target": "mcstatus",
+    "public": "mcstatus",
     "rewrites": [
       {
         "source": "**",
@@ -14,4 +19,5 @@
       }
     ]
   }
+]
 }
