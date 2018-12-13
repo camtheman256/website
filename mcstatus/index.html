@@ -68,7 +68,7 @@
           if(!data.offline) {
             $(".card-text").show();
             $("#version").text(data.version);
-            $("#players").text(data.players.list.join(", "));
+            $("#players").text(data.players.list ? data.players.list.join(", ") : "None");
             $("#playersOnline").text(` (${data.players.online}/${data.players.max})`);
             $("#icon").attr("src", data.icon);
             $("#motd").show().html(data.motd.html);
