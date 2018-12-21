@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  {% include head.html %}
+  <title>{{ page.title }} | Cameron Kleiman</title>
+  <meta property="og:title" content="{{ page.title }} | Cameron Kleiman" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:image" content="{% link img/IMG_6600.JPG %}" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Cameron Kleiman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% if page.id == '/stuff/index' %} active {% endif %}">
+          <a class="nav-link" href="{% link _stuff/index.md %}">Stuff</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <h1>{% if page.icon %}<i class="{{ page.icon }}"></i> {% endif %}{{ page.title }}</h1>
+    {% unless page.hide_updated %}<small class="text-muted"><i class="fas fa-clock"></i>&ensp;Updated {{ page.last_modified_at|date: "at %T on %D" }}</small>{% endunless %}
+    <h6 class="mt-2"><b>{{ page.subtitle }}</b></h6>
+    <hr />
+    {{ content }}
+  </div>
+  <script>
+  $("[data-toggle='tooltip']").tooltip();
+  </script>
+</body>
+</html>
