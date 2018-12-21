@@ -5,6 +5,7 @@ hide_updated: true
 hide_main: true
 icon: "fas fa-box-open"
 subtitle: The random stuff hosted on camk.co by Jekyll and Firebase.
+hide_subtitle: true
 ---
 Here's a list of stuff:
 

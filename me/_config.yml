@@ -6,7 +6,7 @@ collections:
     output: true
     permalink: /stuff/:name
 
-url: https://camk.co/
+url: https://camk.co
 
 plugins:
   - jekyll-last-modified-at
