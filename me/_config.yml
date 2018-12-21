@@ -1,0 +1,14 @@
+destination: _public
+encoding: utf-8
+
+collections:
+  stuff:
+    output: true
+    permalink: /stuff/:name
+
+url: https://camk.co
+baseurl: /
+
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-sitemap

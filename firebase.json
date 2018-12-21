@@ -1,7 +1,7 @@
 {
   "hosting": [{
     "target": "me",
-    "public": "me",  
+    "public": "me/public",  
     "rewrites": [
       {
         "source": "**",
