@@ -5,6 +5,9 @@ collections:
   stuff:
     output: true
     permalink: /stuff/:name
+  projects:
+    output: true
+    permalink: /stuff/project/:name
 
 url: https://camk.co
 

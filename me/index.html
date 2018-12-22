@@ -6,8 +6,8 @@
   <title>Cameron Kleiman</title>
   <link rel="canonical" href="https://camk.co/">
   {% include head.html %}
-  <link rel="stylesheet" type="text/css" href="/css/index.css">
-  <script type="text/javascript" src="/js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% link css/index.css %}">
+  <script type="text/javascript" src="{% link js/index.js %}"></script>
 </head>
 <body>
 <style>
@@ -32,7 +32,7 @@
     <div class="jumbotron" id="big-frame" itemscope itemtype="http://schema.org/Person">
         <div class="d-flex flex-row mb-3 align-items-center flex-wrap">
             <div class="col-xl-3 col-md-4 col-sm-5 col-6 mx-auto">
-                <img itemprop="image" src="img/IMG_6600.JPG" id="profileimg" class="img-fluid rounded-circle"/>
+                <img itemprop="image" src="{% link img/IMG_6600.JPG %}" id="profileimg" class="img-fluid rounded-circle"/>
             </div>
             <div class="col-xl-9 col-md-8 col-sm-7 col-12 text-center">
                 <h1 itemprop="name" id="name" class="display-3">Cameron Kleiman</h1>
