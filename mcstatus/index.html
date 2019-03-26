@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="shortcut icon" href="minecraft.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -32,6 +33,32 @@
     <div class="card mt-3">
       <div class="card-header">
         <span><b>Server Status</b></span>
+        <button class="btn btn-sm btn-primary float-right" data-toggle="tooltip" title="Refresh" onclick="loadMinecraftStatusMit()"><i class="fa fa-sync-alt"></i></button>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">
+          <img class="mr-2" id="icon-mit" src="" />mitcraft.camk.co <span class="badge badge-secondary" id="badge-mit">loading...</span>
+        </h2>
+        <h5 id="motd-mit" class="bg-dark text-white p-3 rounded"></h5>
+        <ul class="card-text h5" id="card-text-mit">
+          <li>
+            <b>Version:</b> <span id="version-mit"></span>
+            </li>
+          <li>
+            <b>Players<span id="playersOnline-mit"></span>:</b> <span id="players-mit"></span>
+            </li>
+            <li id="software-mit">
+              <b>Software:</b> <span id="software-text-mit"></span>
+            </li>
+          </ul>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated <span id="last-updated-mit"></span></small>
+        </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-header">
+        <span><b>Server Status</b></span>
         <button class="btn btn-sm btn-primary float-right" data-toggle="tooltip" title="Refresh" onclick="loadMinecraftStatus()"><i class="fa fa-sync-alt"></i></button>
       </div>
       <div class="card-body">
@@ -39,7 +66,7 @@
           <img class="mr-2" id="icon" src="" />minecraft.camk.co <span class="badge badge-secondary" id="badge">loading...</span>
         </h2>
         <h5 id="motd" class="bg-dark text-white p-3 rounded"></h5>
-        <ul class="card-text h5">
+        <ul class="card-text h5" id="card-text">
           <li>
             <b>Version:</b> <span id="version"></span>
             </li>
@@ -67,7 +94,7 @@
         success: function(data) {
           $("#last-updated").text(new Date());
           if(!data.offline) {
-            $(".card-text").show();
+            $("#card-text").show();
             $("#version").text(data.version);
             $("#players").text(data.players.list ? data.players.list.join(", ") : "None");
             $("#playersOnline").text(` (${data.players.online}/${data.players.max})`);
@@ -76,13 +103,42 @@
             $("#badge").removeClass("badge-secondary").addClass("badge-success").text("Online");
           }
           else {
-            $(".card-text").hide();
+            $("#card-text").hide();
             $("#badge").removeClass("badge-secondary").addClass("badge-danger").text("Offline");
           }
         }
       });
     }
-    $(document).ready(loadMinecraftStatus);
+    function loadMinecraftStatusMit() {
+      $("#version-mit").text("");
+      $("#players-mit").text("");
+      $("#playersOnline-mit").text("");
+      $("#icon-mit").attr("src", "");
+      $("#motd-mit").hide().html("");
+      $("#badge-mit").removeClass("badge-success badge-danger").addClass("badge-secondary").text("loading...");
+      $("#software-text-mit").text("");
+      $.ajax({
+        url: "https://api.mcsrvstat.us/1/mitcraft.camk.co",
+        success: function(data) {
+          $("#last-updated-mit").text(new Date());
+          if(!data.offline) {
+            $("#card-text-mit").show();
+            $("#version-mit").text(data.version);
+            $("#players-mit").text(data.players.list ? data.players.list.join(", ") : "None");
+            $("#playersOnline-mit").text(` (${data.players.online}/${data.players.max})`);
+            $("#icon-mit").attr("src", data.icon);
+            $("#motd-mit").show().html(data.motd.html);
+            $("#badge-mit").removeClass("badge-secondary").addClass("badge-success").text("Online");
+            if(data.software) $("#software-mit").show().children("#software-text-mit").text(data.software);
+          }
+          else {
+            $("#card-text-mit").hide();
+            $("#badge-mit").removeClass("badge-secondary").addClass("badge-danger").text("Offline");
+          }
+        }
+      });
+    }
+    $(loadMinecraftStatus); $(loadMinecraftStatusMit);
   </script>
 </body>
 </html>
