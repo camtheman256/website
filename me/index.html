@@ -79,20 +79,24 @@
             </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar" id="btn-toolbar">
-            <a class="btn btn-primary" role="button" href="{% link files/resume.pdf %}" target="_blank" id="resumebutton">
+          {% assign button_spacing = "mb-1 mr-1" %}
+            <a class="btn btn-primary {{ button_spacing }}" role="button" href="{% link files/resume.pdf %}" target="_blank" id="resumebutton">
                 <i class="fa fa-file-alt"></i>&nbsp;Film Resume
             </a>
-            <a class="btn btn-secondary" role="button" href="https://github.com/camtheman256" target="_blank">
+            <a class="btn btn-secondary {{ button_spacing }}" role="button" href="https://github.com/camtheman256" target="_blank">
                 <i class="fab fa-github"></i>&nbsp;GitHub
             </a>
-            <a class="btn btn-info" role="button" href="https://twitter.com/cmk256" target="_blank">
+            <a class="btn btn-info {{ button_spacing }}" role="button" href="https://twitter.com/cmk256" target="_blank">
                 <i class="fab fa-twitter"></i>&nbsp;Twitter
             </a>
-            <a class="btn btn-danger font-weight-bold font-italic" role="button" href="https://www.athletic.net/TrackAndField/Athlete.aspx?AID=8662682" target="_blank">
+            <a class="btn btn-danger font-weight-bold font-italic {{ button_spacing }}" role="button" href="https://www.athletic.net/TrackAndField/Athlete.aspx?AID=8662682" target="_blank">
               Athletic.net
             </a>
-            <a class="btn btn-light" role="button" href="{% link _stuff/index.md %}">
+            <a class="btn btn-light {{ button_spacing }}" role="button" href="{% link _stuff/index.md %}">
               <i class="fas fa-folder-open"></i>&ensp;Stuff
+            </a>
+            <a class="btn btn-success {{ button_spacing }}" role="button" href="https://mcstatus.camk.co" target="_blank">
+              <i class="fas fa-cube"></i>&ensp;Minecraft Status
             </a>
         </div>
 	</div>
