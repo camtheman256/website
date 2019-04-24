@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#card-display').slideToggle({duration: 750, easing: 'easeOutExpo'});
   });
   $("#profileimg").tooltip({
-    title: "Picture, updated! 🎉",
+    title: "The iconic profile pic",
     trigger: "focus hover",
     placement: "auto",
     container: "body"
