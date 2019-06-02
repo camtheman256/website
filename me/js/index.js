@@ -52,10 +52,10 @@ var dark_set = false;
 function toggle_dark_theme() {
   dark_set = dark_set ? false : true;
   window.localStorage.setItem("dark_set", dark_set);
-  $("a").not(".btn-toolbar > a").toggleClass("text-info");
+  $("a").not(".btn").toggleClass("text-info");
   var current = $("body").css("background-color");
   $("body").css("background-color", (current == "rgb(0, 0, 0)" ? "white" : "black"));
-  $(".card .updates").toggleClass("bg-secondary");
+  $(".card .updates").toggleClass("bg-dark");
   $("#card-deck-updates").toggleClass("bg-dark");
   $("#big-frame").toggleClass("text-white bg-dark");
   $("#signin").toggleClass("bg-dark");
