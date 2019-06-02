@@ -39,16 +39,24 @@
             </div>
         </div>
         <h2 class="indent"><small>In progress, as usual.</small></h2>
-        <p itemprop="description">I'm a senior at <a href="http://www.lasahighschool.org/" target="_blank">the Liberal Arts and Science Academy</a> in Austin, Texas.
-        </p>
-        <p>This site was originally created for <a href="http://www.austinstudentfilm.com" target="_blank">Audio Video Production</a> to upload my <span title="It's gone, Kristen!" data-toggle="tooltip">film resume</span>. I took the <a href="http://lasacs.com/" target="_blank">AP Computer Science</a> course and learnt Java, and it was super lit. In the process, I did some <a href="https://projecteuler.net/progress=cmk256">Project Euler</a>.</p>
+        <p itemprop="description">I'm an incoming freshman at <a href="https://web.mit.edu/" target="_blank">Massachusetts Institute of Techonology</a> in Cambridge, Massachusetts.
+        <p>I graduated <a href="http://www.lasahighschool.org/" target="_blank">the Liberal Arts and Science Academy</a> in Austin, Texas in the <a href="https://lasa2019.com">Class of 2019</a>.</p>
         <p>
-          I'm also a senior officer of LASA Ambassadors, captain of <a href="https://www.lbjxc.org" target="_blank">LBJ Cross Country</a>, and an Assistant Technical Director for the <a href="http://alleycatplayers.org" target="_blank">Alley Cat Players</a>. I also work for <a href="https://www.cetecerp.com/" data-toggle="tooltip" title="Run your business efficiently!">Cetec ERP</a> in my spare time.
+          At LASA, I was a senior officer of LASA Ambassadors, captain of <a href="https://www.lbjxc.org" target="_blank">LBJ Cross Country</a>, ran <a href="https://www.lbjtf.org">LBJ Track</a>, and an Assistant Technical Director for the <a href="http://alleycatplayers.org" target="_blank">Alley Cat Players</a>. I have also worked for <a href="https://www.macromoltek.com">Macromoltek</a> and <a href="https://www.cetecerp.com/" data-toggle="tooltip" title="Run your business efficiently!">Cetec ERP</a> in my spare time.
         </p>
         <div class="card mb-3" id="card-deck-updates">
             <h4 class="card-header no-cursor" id="panel-expand"><i class="fa fa-bell"></i>&nbsp;<span class="linklessa">Updates</span>&emsp;<i class="fa fa-arrow-circle-down" id="arrowicon"></i></h4>
             <div class="card-body" id="card-display" style="display:none">
                 <div class="card-deck">
+                  <div class="card updates">
+                    <img class="card-img-top mh-100" src="{% link img/shop_crop.jpg %}" />
+                    <div class="card-body">
+                      <h4 class="card-title"><i class="fas fa-theater-masks"></i>&ensp;ACP Shop</h4>
+                      <p class="card-text">
+                        I just put my name and website up in the the ACP theater shop. If you're an ACP member, hello! 👋🏼 It's nice to see you! I was a member of ACP from 2017-2019 and an ATD in the 2018-2019 season.
+                      </p>
+                    </div>
+                  </div>
                     <div class="card updates">
                       <div class="card-body">
                         <h4 class="card-title"><i class="fab fa-fort-awesome"></i>&ensp;<span id="special_card_title">Fun features</h4>
@@ -72,13 +80,16 @@
         <div class="btn-toolbar mb-3" role="toolbar" id="btn-toolbar">
           {% assign button_spacing = "mb-1 mr-1" %}
             <a class="btn btn-secondary {{ button_spacing }}" role="button" href="https://github.com/camtheman256" target="_blank">
-                <i class="fab fa-github"></i>&nbsp;GitHub
+                <i class="fab fa-github"></i>&ensp;GitHub
             </a>
             <a class="btn btn-info {{ button_spacing }}" role="button" href="https://twitter.com/cmk256" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;Twitter
+                <i class="fab fa-twitter"></i>&ensp;Twitter
             </a>
             <a class="btn btn-danger font-weight-bold font-italic {{ button_spacing }}" role="button" href="https://www.athletic.net/TrackAndField/Athlete.aspx?AID=8662682" target="_blank">
               Athletic.net
+            </a>
+            <a class="btn btn-dark {{ button_spacing }}" role="button" href="https://www.mit.edu/~ckleiman/" target="_blank">
+              <i class="fas fa-school"></i>&ensp;MIT
             </a>
             <a class="btn btn-light {{ button_spacing }}" role="button" href="{% link _stuff/index.md %}">
               <i class="fas fa-folder-open"></i>&ensp;Stuff
