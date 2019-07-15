@@ -8,10 +8,14 @@ hide_updated: true
 ---
 Here's a list of stuff:
 
-{% for page in site.projects %}
+{% assign stuff = site.projects | concat: site.posts | sort: 'last_modified_at %Y-%m-%d' | reverse %}
+
+{% for page in stuff %}
   {% unless page.hide_main %}
 ## [{{ page.title }}]({{ page.url }})
-<small class="text-muted"><i class="fas fa-calendar-day"></i>&ensp;{{ page.last_modified_at|date: "%b %e, %Y" }}</small>
+<small class="text-muted"><i class="fas fa-calendar-day"></i>
+  &ensp;{% if page.date != site.time %}{{ page.date|date: "%b %e, %Y" }}{% else %}{{ page.last_modified_at|date: "%b %e, %Y" }}{% endif %}
+</small>
 
 _{{ page.subtitle }}_
   {% endunless %}
