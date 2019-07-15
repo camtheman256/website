@@ -14,7 +14,7 @@ Here's a list of stuff:
   {% unless page.hide_main %}
 ## [{{ page.title }}]({{ page.url }})
 <small class="text-muted"><i class="fas fa-calendar-day"></i>
-  &ensp;{% if page.date != site.time %}{{ page.date|date: "%b %e, %Y" }}{% else %}{{ page.last_modified_at|date: "%b %e, %Y" }}{% endif %}
+  &ensp;{% if page.is_post %}{{ page.date|date: "%b %e, %Y" }}{% else %}{{ page.last_modified_at|date: "%b %e, %Y" }}{% endif %}
 </small>
 
 _{{ page.subtitle }}_

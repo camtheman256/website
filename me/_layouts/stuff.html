@@ -29,7 +29,15 @@
     {% else %}
       {{ page.html_title }}
     {% endunless %}
-    {% unless page.hide_updated %}<small class="text-muted"><i class="fas fa-clock"></i>&ensp;Updated {{ page.last_modified_at|date: "at %T on %D" }}</small>{% endunless %}
+    {% unless page.hide_updated or page.is_post %}
+    <small class="text-muted">
+      <i class="fas fa-clock"></i>&ensp;Updated {{ page.last_modified_at|date: "at %T on %D" }}
+    </small>
+    {% elsif page.is_post %}
+    <small class="text-muted">
+      <i class="fas fa-pencil-alt"></i>&ensp;Authored {{ page.date|date: "at %T on %D" }}
+    </small>
+    {% endunless %}
     {% unless page.hide_subtitle %}<h6 class="mt-2"><b>{{ page.subtitle }}</b></h6>{% endunless %}
     <hr />
     {{ content }}

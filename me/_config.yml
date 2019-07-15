@@ -8,6 +8,17 @@ collections:
   projects:
     output: true
     permalink: /stuff/project/:name
+  posts:
+    output: true
+    permalink: /stuff/posts/:year/:month/:day/:title
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      is_post: true
 
 url: https://camk.co
 
