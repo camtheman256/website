@@ -30,6 +30,7 @@ $(document).ready(function(){
         enable_dark_theme();
         $("#dark_mode").find(".btn-dark").button('toggle');
         alert("Congrats! Enjoy dark mode.");
+        keyhist = [];
       }
     });
   }
