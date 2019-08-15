@@ -18,7 +18,6 @@ $(document).ready(function(){
     placement: "auto",
     container: "body"
   });
-  $('[data-toggle="tooltip"]').tooltip();
   var dark_enabled = window.localStorage.getItem("dark_enabled") == 'true' || false;
   var keyhist = [];
   
