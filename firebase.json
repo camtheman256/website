@@ -1,7 +1,7 @@
 {
   "hosting": [{
     "target": "me",
-    "public": "me/_public",  
+    "public": "me/_public",
     "rewrites": [
       {
         "source": "**",
@@ -9,16 +9,6 @@
       }
     ],
     "cleanUrls": true
-  },
-  {
-    "target": "mcstatus",
-    "public": "mcstatus",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
   }
 ]
 }
