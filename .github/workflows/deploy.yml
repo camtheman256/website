@@ -1,0 +1,27 @@
+name: Build and deploy Jekyll site to Firebase hosting
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📫 Checkout files
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: 💎 Setup Ruby
+        uses: ruby/setup-ruby@v1
+      - name: ⚒ Build site
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+      - name: 🌐 Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
