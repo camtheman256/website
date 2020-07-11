@@ -1,5 +1,5 @@
 .firebase
-me/_public
+_public
 firebase-debug.log
 _drafts
 .jekyll-cache
