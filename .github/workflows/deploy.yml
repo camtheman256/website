@@ -21,6 +21,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
+          jekyll_src: me
       - name: 🌐 Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
