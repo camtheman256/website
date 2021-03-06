@@ -11,16 +11,18 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Cameron Kleiman</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item {% if page.id == '/stuff/index' %} active {% endif %}">
-          <a class="nav-link" href="{% link _stuff/index.md %}">Stuff</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Cameron Kleiman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link {% if page.id == '/stuff/index' %} active {% endif %}" href="{% link _stuff/index.md %}">Stuff</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="container mt-3">

@@ -25,11 +25,8 @@
   }
 }
 </style>
-<ul class="nav nav-pills" id="sn-cont" style="">
-    <li role="presentation" style=""><a id="signin" class="nav-link" style="" href="http://mail.camk.co"><i class="fa fa-lock"></i>&ensp;Sign in</a></li>
-</ul>
 <div class="container" style="top:-120%" id="main">
-    <div class="jumbotron" id="big-frame" itemscope itemtype="http://schema.org/Person">
+    <div class="bg-light rounded p-2 p-sm-5" id="big-frame" itemscope itemtype="http://schema.org/Person">
         <div class="d-flex flex-row mb-3 align-items-center flex-wrap">
             <div class="col-xl-3 col-md-4 col-sm-5 col-6 mx-auto">
                 <img itemprop="image" src="{% link img/IMG_6600.JPG %}" id="profileimg" class="img-fluid rounded-circle"/>
@@ -56,38 +53,41 @@
         <div class="card mb-3" id="card-deck-updates">
             <h4 class="card-header no-cursor" id="panel-expand"><i class="fa fa-bell"></i>&nbsp;<span class="linklessa">Updates</span>&emsp;<i class="fa fa-arrow-circle-down" id="arrowicon"></i></h4>
             <div class="card-body" id="card-display" style="display:none">
-                <div class="card-deck">
-                  <div class="card updates">
-                    <img class="card-img-top mh-100" src="{% link img/shop_crop.jpg %}" />
-                    <div class="card-body">
-                      <h4 class="card-title"><i class="fas fa-theater-masks"></i>&ensp;ACP Shop</h4>
-                      <p class="card-text">
-                        I put my name and website up in the the ACP theater shop. If you're an ACP member, hello! 👋🏼 It's nice to see you! I was a member of ACP from 2017-2019 and an ATD in the 2018-2019 season.
-                      </p>
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col">
+                    <div class="card updates">
+                      <img class="card-img-top mh-100" src="{% link img/shop_crop.jpg %}" />
+                      <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-theater-masks"></i>&ensp;ACP Shop</h4>
+                        <p class="card-text">
+                          I put my name and website up in the the ACP theater shop. If you're an ACP member, hello! 👋🏼 It's nice to see you! I was a member of ACP from 2017-2019 and an ATD in the 2018-2019 season.
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  <div class="col">
                     <div class="card updates">
                       <div class="card-body">
                         <h4 class="card-title"><i class="fab fa-fort-awesome"></i>&ensp;<span id="special_card_title">Fun features</h4>
                         <p class="card-text">
                           <span id="lame_card_text">Figure out how to enable this card for a fun surprise. <b>Hint:</b> It requires a keyboard. Good luck! <a href="#" class="d-lg-none" onclick="enable_dark_theme()">(Mobile users, click here to cheat.)</a></span>
                           <h5 class="special_card_stuff" style="display:none">Toggle dark mode on <a href="https://camk.co">camk.co</a>:</h5>
-                          <div class="btn-group btn-group-toggle special_card_stuff" id="dark_mode" data-toggle="buttons" style="display:none">
-                            <label class="btn btn-light active">
-                              <input type="radio" name="dark_mode" autocomplete="off" value="off" checked> Off
-                            </label>
-                            <label class="btn btn-dark">
-                              <input type="radio" name="dark_mode" autocomplete="off" value="on"> On
-                            </label>
+                          <div class="btn-group special_card_stuff" id="dark_mode" data-toggle="buttons" style="display:none">
+                            <input class="btn-check" type="radio" name="dark_mode" autocomplete="off" value="off" checked id="dark-off">
+                            <label class="btn btn-light active" for="dark-off">Off</label>
+
+                            <input class="btn-check" type="radio" name="dark_mode" autocomplete="off" value="on" id="dark-on">
+                            <label class="btn btn-dark" for="dark-on">On</label>
                           </div>
                         </p>
                       </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
         <div class="btn-toolbar mb-3" role="toolbar" id="btn-toolbar">
-          {% assign button_spacing = "mb-1 mr-1" %}
+          {% assign button_spacing = "mb-1 me-1" %}
             <a class="btn btn-secondary {{ button_spacing }}" role="button" href="https://github.com/camtheman256" target="_blank">
                 <i class="fab fa-github"></i>&ensp;GitHub
             </a>
@@ -97,7 +97,7 @@
 						<a class="btn btn-primary {{ button_spacing }}" role="button" href="https://www.linkedin.com/in/cameron-kleiman" target="_blank">
 								<i class="fab fa-linkedin"></i>&ensp;LinkedIn
 						</a>
-            <a class="btn btn-danger font-weight-bold font-italic {{ button_spacing }}" role="button" href="https://www.athletic.net/TrackAndField/Athlete.aspx?AID=8662682" target="_blank">
+            <a class="btn btn-danger fw-bold fst-italic {{ button_spacing }}" role="button" href="https://www.athletic.net/TrackAndField/Athlete.aspx?AID=8662682" target="_blank">
               Athletic.net
             </a>
             <a class="btn btn-dark {{ button_spacing }}" role="button" href="https://www.mit.edu/~ckleiman/" target="_blank">
